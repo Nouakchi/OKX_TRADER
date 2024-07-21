@@ -2,9 +2,9 @@
 
 std::string send_request(const std::string &method, const std::string &endpoint, const std::string &body = "") 
 {
-    std::string api_key = std::getenv("API_KEY") ? std::getenv("API_KEY") : "f7db8d7a-b05e-458a-8cc7-b10252f60f30";
-    std::string secret_key = std::getenv("SECRET_KEY") ? std::getenv("SECRET_KEY") : "315579F51BC76893B614B795675E5637";
-    std::string passphrase = std::getenv("PASSPHRASE") ? std::getenv("PASSPHRASE") : "GoQuant1$";
+    std::string api_key = std::getenv("API_KEY") ? std::getenv("API_KEY") : "API_KEY";
+    std::string secret_key = std::getenv("SECRET_KEY") ? std::getenv("SECRET_KEY") : "SECRET_KEY";
+    std::string passphrase = std::getenv("PASSPHRASE") ? std::getenv("PASSPHRASE") : "PASSPHRASE";
     std::string base_url = "https://www.okx.com";
 
     std::string timestamp = get_timestamp();
